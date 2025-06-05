@@ -1,0 +1,86 @@
+[
+    {
+        "pergunta": "Qual é a raiz quadrada de 64?",
+        "opcoes": ["A) 6", "B) 7", "C) 8", "D) 9"],
+        "resposta_certa": "C) 8",
+        "tempo": 10
+    },
+    {
+        "pergunta": "Quanto é 3 elevado ao quadrado?",
+        "opcoes": ["A) 6", "B) 9", "C) 12", "D) 27"],
+        "resposta_certa": "B) 9",
+        "tempo": 10
+    },
+    {
+        "pergunta": "Se João tem R$50 e gasta R$32, quanto sobra?",
+        "opcoes": ["A) 18", "B) 20", "C) 22", "D) 28"],
+        "resposta_certa": "A) 18",
+        "tempo": 10
+    },
+    {
+        "pergunta": "Qual é o valor de log10(100)?",
+        "opcoes": ["A) 1", "B) 2", "C) 10", "D) 0"],
+        "resposta_certa": "B) 2",
+        "tempo": 20
+    },
+    {
+        "pergunta": "Se um triângulo tem lados 3 e 4, qual deve ser o terceiro lado para ser um triângulo retângulo?",
+        "opcoes": ["A) 5", "B) 6", "C) 7", "D) 8"],
+        "resposta_certa": "A) 5",
+        "tempo": 20
+    },
+    {
+        "pergunta": "Quanto é 2⁵ (2 elevado a 5)?",
+        "opcoes": ["A) 32", "B) 16", "C) 64", "D) 48"],
+        "resposta_certa": "A) 32",
+        "tempo": 20
+    },
+    {
+        "pergunta": "Qual é a raiz cúbica de 27?",
+        "opcoes": ["A) 2", "B) 3", "C) 6", "D) 9"],
+        "resposta_certa": "B) 3",
+        "tempo": 15
+    },
+    {
+        "pergunta": "Se 20% de um valor é 40, qual é o valor original?",
+        "opcoes": ["A) 160", "B) 200", "C) 180", "D) 100"],
+        "resposta_certa": "B) 200",
+        "tempo": 20
+    },
+    {
+        "pergunta": "Qual é o valor de log10(1000)?",
+        "opcoes": ["A) 2", "B) 3", "C) 10", "D) 1"],
+        "resposta_certa": "B) 3",
+        "tempo": 25
+    },
+    {
+        "pergunta": "Se um carro percorre 60km em 1 hora, quantos km ele percorre em 3h?",
+        "opcoes": ["A) 120", "B) 180", "C) 150", "D) 90"],
+        "resposta_certa": "B) 180",
+        "tempo": 15
+    },
+    {
+        "pergunta": "Qual o valor de 7 × 8?",
+        "opcoes": ["A) 54", "B) 56", "C) 64", "D) 58"],
+        "resposta_certa": "B) 56",
+        "tempo": 12
+    },
+    {
+        "pergunta": "Se um número ao quadrado é 49, qual é o número?",
+        "opcoes": ["A) 6", "B) 7", "C) 8", "D) 9"],
+        "resposta_certa": "B) 7",
+        "tempo": 10
+    },
+    {
+        "pergunta": "Quanto é 15% de 200?",
+        "opcoes": ["A) 30", "B) 35", "C) 25", "D) 20"],
+        "resposta_certa": "A) 30",
+        "tempo": 15
+    },
+    {
+        "pergunta": "Se a função f(x) = 2x + 1, qual o valor de f(3)?",
+        "opcoes": ["A) 6", "B) 7", "C) 8", "D) 9"],
+        "resposta_certa": "B) 7",
+        "tempo": 15
+    }
+]
