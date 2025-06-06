@@ -154,7 +154,7 @@
   <img id="countdown" class="countdown-img" src="" alt="" style="display: none;" />
 
   <div id="question-container">
-    <div class="question" id="pergunta">Carregando pergunta...</div>
+    <div class="question" id="pergunta">Ocorreu um erro ao carregar a pergunta.</div>
   </div>
 </div>
 
@@ -200,13 +200,22 @@
     }, 1000);
   }
 
+  function embaralhar(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
   function disableRespostas() {
     document.querySelectorAll(".btn-resposta").forEach(btn => btn.disabled = true);
   }
 
   async function carregarPerguntas() {
     const response = await fetch("perguntas.json");
-    perguntas = await response.json();
+    const dados = await response.json();
+    perguntas = embaralhar(dados).slice(0, 15);
     iniciarQuiz();
   }
 
@@ -297,6 +306,7 @@
   function mostrarFeedback(texto, classe) {
     questionContainer.style.display = "none";
     timerDisplay.style.display = "none";
+
     const telaFeedback = document.createElement("div");
     telaFeedback.id = "tela-feedback";
     telaFeedback.style.cssText = `
@@ -326,8 +336,15 @@
     pontuacao.style.marginTop = "10px";
     pontuacao.style.color = "#ccc";
 
+    const progresso = document.createElement("div");
+    progresso.textContent = `Pergunta ${perguntaAtual + 1}/${perguntas.length}`;
+    progresso.style.fontSize = "1.2rem";
+    progresso.style.marginTop = "5px";
+    progresso.style.color = "#aaa";
+
     telaFeedback.appendChild(feedback);
     telaFeedback.appendChild(pontuacao);
+    telaFeedback.appendChild(progresso);
     document.body.appendChild(telaFeedback);
 
     setTimeout(() => {
@@ -343,8 +360,8 @@
 
   function mostrarFim() {
     questionContainer.innerHTML = `
-      <div class="question">Fim do quiz!</div>
-      <div class="feedback correct" style="font-size: 2rem;">Pontuação final: ${pontos}</div>
+      <div class="question">ACABOU</div>
+      <div class="feedback correct" style="font-size: 2rem;">Você adquiriu ${pontos} pontos!</div>
     `;
     questionContainer.style.display = "flex";
     timerDisplay.style.display = "none";
